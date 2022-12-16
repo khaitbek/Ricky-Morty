@@ -1,0 +1,101 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  font-family: var(--ff-main);
+  color: #fff;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1150px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* sticky footer */
+.site-main {
+  flex-grow: 1;
+}
+
+.characters{
+    padding-block: 50px;
+}
+
+.characters-title{
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.character-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,280px));
+    gap: 2rem 1rem;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.character-item{
+    text-align: center;
+    border-radius: 10px;
+    background-color: gray;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.pagination-btns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.pagination-btns button{
+  padding: .5rem 2rem;
+  border: 1px solid transparent;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: crimson;
+  cursor: pointer;
+}
