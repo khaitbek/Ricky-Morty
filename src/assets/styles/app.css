@@ -171,3 +171,7 @@ select{
 .gap{
   gap: 1rem;
 }
+
+.text-white{
+  color: #fff;
+}
